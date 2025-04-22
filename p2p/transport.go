@@ -6,4 +6,5 @@ type Peer interface {
 
 // Handle comminucation between the nodes and the network
 type Transport interface {
+	ListenAndAccept() error
 }
