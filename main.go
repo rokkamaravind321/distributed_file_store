@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-	config := p2p.TCPTransportConfig{
+	config := p2p.TCPTransportConfig{ 
 		ListenAddress: ":3000",
 		HandshakeFunc: p2p.NOPHandshakeFunc,
 		Decoder:       p2p.GobDecoder{},
